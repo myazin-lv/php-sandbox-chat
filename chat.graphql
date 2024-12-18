@@ -1,0 +1,27 @@
+schema {
+    query: Query,
+    mutation: Mutation
+}
+
+type Query {
+    chats(sender: ID): [User]
+    messages(sender: ID, last: Int = 10): [Message]
+}
+
+type Mutation {
+    sendMessage(recipient: ID, messageBody: String): Message
+}
+
+type User {
+    id: ID!
+    login: String!
+}
+
+type Message {
+    id: ID!
+    sender: User
+    recipient: User
+    messageBody: String
+    createdAt: String
+}
+

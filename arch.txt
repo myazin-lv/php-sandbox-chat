@@ -1,0 +1,70 @@
+Backend
+- authorization
+- api:
+  - uri - /graphql
+  - entities:
+    - User(id: int, login: string, password: string)
+    - Message(id: int, sender: User, recipient: User, messageBody: text, createdAt: datatime)
+  - operations:
+    - start chatting with recipient using link
+    - start chatting with recipient using login
+    - get list of available chats for User
+    - get list of last 10 messages between User and recipient
+  - queries:
+    - chats(sender: User)
+    - message(last: 10)
+  - mutations:
+    - send message to recipient
+- database - MySQL
+
+Frontend
+- JS + React + Material UI
+- websocket connection to backend
+  - new message event handle (senderId, senderLogin, messageBody, createdAt)
+
+Scenarios:
+If: User opens index page of site
+Then: Backend tries to identify User by session id
+
+    If: User was not identified
+    Then: Backend renders Authentication Form
+
+    If: User was identified
+    Then: Backend renders Main Page template:
+        - Header
+        - Status bar: Logged as <User>, Logout button
+        - Section consists of 2 columns:
+            - Left Column:
+                - input control for new chat login name
+                - list of chats (old recipients)
+            - Right Column consists of 2 rows:
+                - messages from selected chat
+                - input control for new message + send message button
+
+    If: Authenticated User on Main Page click on Logout button
+    Then: Session ends
+
+    If: Authenticated User on Main Page activate input for new login name
+    Then: Right Column displays empty message list
+
+    If: Authenticated User on Main Page activate item in list of chats (recipients)
+    Then: Right Column displays last 10 messages from chat with selected recipient
+
+    If: Authenticated User on Main Page enter new message text and push the send message button
+    Then: Message is sent to the recipient:
+      - Frontend send mutation data to Backend graphql-api
+      - Backend writes new message to the database,
+      - Backend send event through websocket to sender and recipient Frontends (if connection is established),
+
+    If: Frontend of Authenticated User on Main Page receives new message event from webwsocket connection
+        and message sender is Authenticated User and message recipient is Current Chat
+    Then: Frontend displays message from event
+
+
+
+
+
+
+
+
+
