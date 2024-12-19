@@ -2,7 +2,9 @@
   "version": "1.0.0",
   "require": {
     "php": ">=7.3",
-    "twig/twig": "^3.0"
+    "twig/twig": "^3.0",
+    "delight-im/auth": "^8.3",
+    "ext-pdo": "*"
   },
   "autoload": {
     "psr-4": {

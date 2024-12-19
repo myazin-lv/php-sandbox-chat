@@ -3,7 +3,7 @@
         configVersion="3"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns="https://www.phpdoc.org"
-        xsi:noNamespaceSchemaLocation="data/xsd/phpdoc.xsd"
+        xsi:noNamespaceSchemaLocation="database/xsd/phpdoc.xsd"
 >
     <title>Chat PHP Documentation</title>
     <paths>

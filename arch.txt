@@ -24,7 +24,7 @@ Frontend
 
 Scenarios:
 If: User opens index page of site
-Then: Backend tries to identify User by session id
+Then: Backend tries to identify User
 
     If: User was not identified
     Then: Backend renders Authentication Form

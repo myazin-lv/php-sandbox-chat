@@ -16,6 +16,8 @@ class Router
      */
     protected $pages = [
         'index' => [],
+        'login' => [],
+        'initdatabase' => [],
         '404' => [],
     ];
 

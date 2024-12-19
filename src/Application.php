@@ -5,7 +5,6 @@ namespace Chat;
 use \Chat\Http\Request;
 use \Chat\Util\LazyServiceLocator;
 
-
 /**
  * Represents a Chat web application.
  */
@@ -52,8 +51,15 @@ class Application
                     PROJECT_ROOT.'/.cache/twig/'
                 );
             },
-            'MySQL' => function () {
-                throw new \Exception('Not Implemented');
+            'DatabaseConnection' => function () {
+                return new \PDO('sqlite:../database/chat-db.sqlite',null,null,);
+            },
+            'Authenticator' => function () use ($injector) {
+                $db = Injector::make('DatabaseConnection');
+                return new \Delight\Auth\Auth($db);
+            },
+            'DatabaseUtils' => function () use ($injector) {
+                return new \Chat\Database\Utils();
             },
         ]);
     }
