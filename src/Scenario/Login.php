@@ -14,15 +14,7 @@ use \Chat\Scenario;
 class Login implements Scenario
 {
     use Inject\HtmlRenderer;
-
-    private ?\Delight\Auth\Auth $authenticator = null;
-
-    public function __construct()
-    {
-        if (!isset($this->authenticator)) {
-            $this->authenticator = Injector::make('Authenticator');
-        }
-    }
+    use Inject\Authenticator;
 
     /**
      * Runs scenario of login page.
@@ -33,7 +25,7 @@ class Login implements Scenario
      */
     public function run(Request $req): array
     {
-        if ($this->authenticator->isLoggedIn()) {
+        if ($this->authenticator()->isLoggedIn()) {
             Utils::RedirectToPage('/');
         }
         return ['toRender' => [

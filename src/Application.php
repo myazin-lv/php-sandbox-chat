@@ -2,8 +2,8 @@
 
 namespace Chat;
 
-use \Chat\Http\Request;
-use \Chat\Util\LazyServiceLocator;
+use Chat\Http\Request;
+use Chat\Util\LazyServiceLocator;
 
 /**
  * Represents a Chat web application.
@@ -59,7 +59,7 @@ class Application
                 return new \Delight\Auth\Auth($db);
             },
             'DatabaseUtils' => function () use ($injector) {
-                return new \Chat\Database\Utils();
+                return new Database\Utils();
             },
         ]);
     }

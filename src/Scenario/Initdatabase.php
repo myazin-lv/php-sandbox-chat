@@ -3,8 +3,7 @@
 namespace Chat\Scenario;
 
 use Chat\Http\Request;
-use \Chat\Inject;
-use Chat\Injector;
+use Chat\Inject;
 use Chat\Scenario;
 
 /**
@@ -13,15 +12,7 @@ use Chat\Scenario;
 class Initdatabase implements Scenario
 {
     use Inject\HtmlRenderer;
-
-    private ?\Chat\Database\Utils $dbUtils = null;
-
-    public function __construct()
-    {
-        if (!isset($this->dbUtils)) {
-            $this->dbUtils = Injector::make('DatabaseUtils');
-        }
-    }
+    use Inject\DatabaseUtils;
 
     /**
      * Runs scenario of init database page.
@@ -34,7 +25,7 @@ class Initdatabase implements Scenario
     {
         $force = false || ($req->GET->exists("force")) && ($req->GET->Bool("force")===true);
         $dbInitiationResult = 'Database is successfully initiated!';
-        if (!$this->dbUtils->initDatabase($force)) {
+        if (!$this->databaseUtils()->initDatabase($force)) {
             $dbInitiationResult = 'Error while database initiation!';
         }
         return ['toRender' => [
