@@ -78,12 +78,12 @@
                                             <a href="../classes/Chat-Scenario.html"><abbr title="\Chat\Scenario">Scenario</abbr></a>                                    </span>
                                         <span class="phpdocumentor-class__extends">
                     Uses
-                                            <a href="../classes/Chat-Inject-HtmlRenderer.html"><abbr title="\Chat\Inject\HtmlRenderer">HtmlRenderer</abbr></a>                                    </span>
+                                            <a href="../classes/Chat-Inject-HtmlRenderer.html"><abbr title="\Chat\Inject\HtmlRenderer">HtmlRenderer</abbr></a>,                                             <a href="../classes/Chat-Inject-DatabaseUtils.html"><abbr title="\Chat\Inject\DatabaseUtils">DatabaseUtils</abbr></a>                                    </span>
                     </h2>
         <aside class="phpdocumentor-element-found-in">
             <abbr class="phpdocumentor-element-found-in__file" title="src/Scenario/Initdatabase.php"><a href="../files/src-scenario-initdatabase.html"><abbr title="src/Scenario/Initdatabase.php">Initdatabase.php</abbr></a></abbr>
             :
-            <span class="phpdocumentor-element-found-in__line">13</span>
+            <span class="phpdocumentor-element-found-in__line">12</span>
         </aside>
 
         <p class="phpdocumentor-class__summary"></p>
@@ -93,44 +93,23 @@
         <h3>Table of Contents</h3>
 
 <dl class="phpdocumentor-table_of_contents">
-                    <dt><a href="../classes/Chat-Scenario-Initdatabase.html#property_dbUtils">$dbUtils</a> : <a href="../classes/Chat-Database-Utils.html"><abbr title="\Chat\Database\Utils">Utils</abbr></a>|null</dt>
-            <dd></dd>
-                        <dt><a href="../classes/Chat-Inject-HtmlRenderer.html#property_HtmlRenderer">$HtmlRenderer</a> : <a href="../classes/Chat-Renderer.html"><abbr title="\Chat\Renderer">Renderer</abbr></a></dt>
+                            <dt><a href="../classes/Chat-Inject-HtmlRenderer.html#property_HtmlRenderer">$HtmlRenderer</a> : <a href="../classes/Chat-Renderer.html"><abbr title="\Chat\Renderer">Renderer</abbr></a></dt>
             <dd>Injected instance of HTML renderer.</dd>
-                    <dt><a href="../classes/Chat-Scenario-Initdatabase.html#method___construct">__construct()</a> : mixed</dt>
+                <dt><a href="../classes/Chat-Inject-DatabaseUtils.html#property_databaseUtils">$databaseUtils</a> : <a href="../classes/Chat-Database-Utils.html"><abbr title="\Chat\Database\Utils">Utils</abbr></a>|null</dt>
             <dd></dd>
-                <dt><a href="../classes/Chat-Scenario-Initdatabase.html#method_run">run()</a> : array</dt>
+                    <dt><a href="../classes/Chat-Scenario-Initdatabase.html#method_run">run()</a> : array</dt>
             <dd>Runs scenario of init database page.</dd>
                         <dt><a href="../classes/Chat-Inject-HtmlRenderer.html#method_initHtmlRenderer">initHtmlRenderer()</a> : <a href="../classes/Chat-Renderer.html"><abbr title="\Chat\Renderer">Renderer</abbr></a></dt>
             <dd>Retrieves instance of HTML renderer from IoC-container
 if it is not set yet.</dd>
+                <dt><a href="../classes/Chat-Inject-DatabaseUtils.html#method_databaseUtils">databaseUtils()</a> : <a href="../classes/Chat-Database-Utils.html"><abbr title="\Chat\Database\Utils">Utils</abbr></a></dt>
+            <dd></dd>
         </dl>
 
 
         
                     <section>
                 <h3 class="phpdocumentor-properties__header">Properties</h3>
-                                    <a id="property_dbUtils"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-                                "
->
-    <h4 class="phpdocumentor-property__name">$dbUtils</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/Scenario/Initdatabase.php"><a href="../files/src-scenario-initdatabase.html"><abbr title="src/Scenario/Initdatabase.php">Initdatabase.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">17</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__type"><a href="../classes/Chat-Database-Utils.html"><abbr title="\Chat\Database\Utils">Utils</abbr></a>|null</span>
-        <span class="phpdocumentor-signature__name">$dbUtils</span>
-         = <span class="phpdocumentor-signature__default-value">null</span>    </code>
-        
-
-</article>
                                                                     <a id="property_HtmlRenderer"></a>
 <article
         class="
@@ -153,39 +132,31 @@ if it is not set yet.</dd>
         
 
 </article>
+                                    <a id="property_databaseUtils"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--protected
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$databaseUtils</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/Inject/DatabaseUtils.php"><a href="../files/src-inject-databaseutils.html"><abbr title="src/Inject/DatabaseUtils.php">DatabaseUtils.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">9</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__type"><a href="../classes/Chat-Database-Utils.html"><abbr title="\Chat\Database\Utils">Utils</abbr></a>|null</span>
+        <span class="phpdocumentor-signature__name">$databaseUtils</span>
+         = <span class="phpdocumentor-signature__default-value">null</span>    </code>
+        
+
+</article>
                             </section>
         
                     <section>
                 <h3 class="phpdocumentor-methods__header">Methods</h3>
-                                    <a id="method___construct"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
-                                                        "
->
-    <h4 class="phpdocumentor-method__name">__construct()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/Scenario/Initdatabase.php"><a href="../files/src-scenario-initdatabase.html"><abbr title="src/Scenario/Initdatabase.php">Initdatabase.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">19</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">__construct</span>(
-                )
-        : <span class="phpdocumentor-signature__response_type">mixed</span>
-    </code>
-
-    
-    
-    
-
-
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">mixed</span>
-            
-</article>
                                     <a id="method_run"></a>
 <article
         class="
@@ -197,7 +168,7 @@ if it is not set yet.</dd>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/Scenario/Initdatabase.php"><a href="../files/src-scenario-initdatabase.html"><abbr title="src/Scenario/Initdatabase.php">Initdatabase.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">33</span>
+        <span class="phpdocumentor-element-found-in__line">24</span>
     </aside>
         <p class="phpdocumentor-summary">Runs scenario of init database page.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -259,6 +230,35 @@ if it is not set yet.</p>
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><a href="../classes/Chat-Renderer.html"><abbr title="\Chat\Renderer">Renderer</abbr></a></span>
                     &mdash; <span class="phpdocumentor-description"><p>Initialized instance of HTML renderer.</p></span>
+            
+</article>
+                                    <a id="method_databaseUtils"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--protected
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">databaseUtils()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/Inject/DatabaseUtils.php"><a href="../files/src-inject-databaseutils.html"><abbr title="src/Inject/DatabaseUtils.php">DatabaseUtils.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">11</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+                                <span class="phpdocumentor-signature__name">databaseUtils</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type"><a href="../classes/Chat-Database-Utils.html"><abbr title="\Chat\Database\Utils">Utils</abbr></a></span>
+    </code>
+
+    
+    
+    
+
+
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="../classes/Chat-Database-Utils.html"><abbr title="\Chat\Database\Utils">Utils</abbr></a></span>
             
 </article>
                             </section>

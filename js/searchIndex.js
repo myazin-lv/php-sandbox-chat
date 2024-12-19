@@ -41,25 +41,10 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Chat-Database-Utils.html"
         },                {
-            "fqsen": "\\Chat\\Database\\Utils\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "../classes/Chat-Database-Utils.html#method___construct"
-        },                {
             "fqsen": "\\Chat\\Database\\Utils\u003A\u003AinitDatabase\u0028\u0029",
             "name": "initDatabase",
             "summary": "",
             "url": "../classes/Chat-Database-Utils.html#method_initDatabase"
-        },                {
-            "fqsen": "\\Chat\\Database\\Utils\u003A\u003A\u0024dbConnection",
-            "name": "dbConnection",
-            "summary": "",
-            "url": "../classes/Chat-Database-Utils.html#property_dbConnection"
-        },                {
-            "fqsen": "\\Chat\\Database\\Utils\u003A\u003A\u0024authenticator",
-            "name": "authenticator",
-            "summary": "",
-            "url": "../classes/Chat-Database-Utils.html#property_authenticator"
         },                {
             "fqsen": "\\Chat\\Http\\Params",
             "name": "Params",
@@ -160,6 +145,36 @@ Search.appendIndex(
             "name": "RedirectToPage",
             "summary": "Do\u0020redirect\u0020to\u0020page\u0020url",
             "url": "../classes/Chat-Http-Utils.html#method_RedirectToPage"
+        },                {
+            "fqsen": "\\Chat\\Inject\\Authenticator",
+            "name": "Authenticator",
+            "summary": "",
+            "url": "../classes/Chat-Inject-Authenticator.html"
+        },                {
+            "fqsen": "\\Chat\\Inject\\Authenticator\u003A\u003A\u0024authenticator",
+            "name": "authenticator",
+            "summary": "",
+            "url": "../classes/Chat-Inject-Authenticator.html#property_authenticator"
+        },                {
+            "fqsen": "\\Chat\\Inject\\DatabaseConnection",
+            "name": "DatabaseConnection",
+            "summary": "",
+            "url": "../classes/Chat-Inject-DatabaseConnection.html"
+        },                {
+            "fqsen": "\\Chat\\Inject\\DatabaseConnection\u003A\u003A\u0024databaseConnection",
+            "name": "databaseConnection",
+            "summary": "",
+            "url": "../classes/Chat-Inject-DatabaseConnection.html#property_databaseConnection"
+        },                {
+            "fqsen": "\\Chat\\Inject\\DatabaseUtils",
+            "name": "DatabaseUtils",
+            "summary": "",
+            "url": "../classes/Chat-Inject-DatabaseUtils.html"
+        },                {
+            "fqsen": "\\Chat\\Inject\\DatabaseUtils\u003A\u003A\u0024databaseUtils",
+            "name": "databaseUtils",
+            "summary": "",
+            "url": "../classes/Chat-Inject-DatabaseUtils.html#property_databaseUtils"
         },                {
             "fqsen": "\\Chat\\Inject\\HtmlRenderer",
             "name": "HtmlRenderer",
@@ -296,40 +311,20 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Chat-Scenario-Initdatabase.html"
         },                {
-            "fqsen": "\\Chat\\Scenario\\Initdatabase\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "../classes/Chat-Scenario-Initdatabase.html#method___construct"
-        },                {
             "fqsen": "\\Chat\\Scenario\\Initdatabase\u003A\u003Arun\u0028\u0029",
             "name": "run",
             "summary": "Runs\u0020scenario\u0020of\u0020init\u0020database\u0020page.",
             "url": "../classes/Chat-Scenario-Initdatabase.html#method_run"
-        },                {
-            "fqsen": "\\Chat\\Scenario\\Initdatabase\u003A\u003A\u0024dbUtils",
-            "name": "dbUtils",
-            "summary": "",
-            "url": "../classes/Chat-Scenario-Initdatabase.html#property_dbUtils"
         },                {
             "fqsen": "\\Chat\\Scenario\\Login",
             "name": "Login",
             "summary": "Implements\u0020scenarios\u0020of\u0020login\u0020page\u0020for\u0020users\u0020authentication.",
             "url": "../classes/Chat-Scenario-Login.html"
         },                {
-            "fqsen": "\\Chat\\Scenario\\Login\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "../classes/Chat-Scenario-Login.html#method___construct"
-        },                {
             "fqsen": "\\Chat\\Scenario\\Login\u003A\u003Arun\u0028\u0029",
             "name": "run",
             "summary": "Runs\u0020scenario\u0020of\u0020login\u0020page.",
             "url": "../classes/Chat-Scenario-Login.html#method_run"
-        },                {
-            "fqsen": "\\Chat\\Scenario\\Login\u003A\u003A\u0024authenticator",
-            "name": "authenticator",
-            "summary": "",
-            "url": "../classes/Chat-Scenario-Login.html#property_authenticator"
         },                {
             "fqsen": "\\Chat\\Scenario",
             "name": "Scenario",
